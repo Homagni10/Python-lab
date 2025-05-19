@@ -1,0 +1,64 @@
+#Write a program that takes 2 numbers as command line arguments and prints its sum
+import sys
+if len(sys.argv) != 3:
+    print("Please provide two numbers as command line arguments.")
+else:
+    try:
+        # Convert the arguments to numbers
+        num1 = float(sys.argv[1])
+        num2 = float(sys.argv[2])
+        # Calculate and print the sum
+        print(f"The sum of {num1} and {num2} is: {num1 + num2}")
+    except ValueError:
+        print("Please provide valid numbers.")
+
+
+
+
+#Implement python script to show the usage of various operators available in python language
+a = 10
+b = 5
+print("Addition:", a + b)
+print("Subtraction:", a - b)
+print("Multiplication:", a * b)
+print("Division:", a / b)
+print("Modulus:", a % b)
+print("Exponentiation:", a ** b)
+print("Floor Division:", a // b)
+print("Equal:", a == b)
+print("Not Equal:", a != b)
+print("Greater:", a > b)
+print("Less:", a < b)
+print("Greater or Equal:", a >= b)
+print("Less or Equal:", a <= b)
+print("Bitwise AND:", a & b)
+print("Bitwise OR:", a | b)
+print("Bitwise XOR:", a ^ b)
+print("Left Shift:", a << b)
+print("Right Shift:", a >> b)
+c = a
+c += b
+print("c after +=:", c)
+print("10 in [5, 10, 15]:", 10 in [5, 10, 15])
+print("a is b:", a is b)
+print("a is not b:", a is not b)
+
+
+
+
+#Implement python script to read person's age from keyboard and display whether he is eligible for voting or not
+age = int(input("Enter your age:"))
+if age >= 18:
+    print("You are eligible to vote.")
+else:
+    print("you are not eligible to vote.")
+
+
+
+
+#Implement python script to check the given year is leap year or not
+year = int(input("Enter a year:"))
+if (year % 4 == 0 and year % 100 != 0) or (year % 400 == 0):
+    print(year, "is a leap year.")
+else:
+    print(year, "is not a leap year.")
